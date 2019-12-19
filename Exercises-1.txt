@@ -1,0 +1,51 @@
+1.Newton Second Law
+
+START
+    STORE  `massaBenda` EQUALS 600
+    STORE  `percepatanBenda` EQUALS 2
+
+    CALCULATE  `resultanGaya` EQUALS `massaBenda` TIMES `percepatanBenda`
+     
+    DISPLAY `resultanGaya`
+END
+====================================================
+
+2.Tahun Kabisat
+
+START
+    STORE `faktorA` EQUALS 4  
+    STORE faktorB` EQUALS 100
+    STORE `faktorC` EQUALS 400
+    STORE `tahun` EQUALS 2020
+
+    CALCULATE   IF `tahun` MODULUS `faktorA` EQUALS TO zero AND `tahun` MODULUS `faktorB` NOT EQUALS TO zero {
+	                DISPLAY `tahunKabisat` }
+                ELSE IF `tahun` MODULUS `faktorA` EQUALS TO zero OR `tahun` MODULUS `faktorB` NOT EQUALS TO zero AND `tahun` MODULUS `faktorC` EQUALS TO zero {
+	                DISPLAY `tahun kabisat` }
+                ELSE {DISPLAY `bukan tahun kabisat`}
+	                 
+END
+=============================================	
+	
+3. Laundry Day
+
+START
+    STORE `pakaian` EQUALS 20
+    STORE `PakaianMasukMesinCuci` EQUALS 0 
+
+    CALCULATE WHILE `pakaian` ARE NOT EQUALS TO 0
+                SET `PakaianMasukMesinCuci` TO `PakaianMasukMesinCuci` + 1
+                SET `pakaian` TO `pakaian` - 1
+END
+==============================================
+4. Periksa Kuku
+
+START
+    STORE `murid` EQUALS 40
+
+	CALCULATE  WHILE `murid`
+                    IF `kukuPanjang`
+                        ELSE `diHukum`
+                    IF `kukuRapih`
+                        ELSE `diPuji`
+END
